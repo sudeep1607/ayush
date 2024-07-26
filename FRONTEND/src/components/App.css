@@ -1,0 +1,65 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #034b03
+    
+
+}
+
+.login-container {
+    width: 260px;
+    margin: 40px auto;
+    padding: 120px;
+    margin-bottom: auto;
+    background-color: #07a37a; /* Light blue background */
+    background-image: url('../images/logobg.png') ; /* Update with your image path */
+             
+  }
+  
+
+  .login-form {
+    display: inline;
+    flex-direction: column;
+    color: rgb(3, 66, 13);
+    font-weight: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    font-weight: 20px;
+    color: #034b03;
+    
+    padding-left: 450px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    
+    
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: hsl(73, 90%, 27%); /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
