@@ -15,7 +15,7 @@ function Success() {
         <ul className='link-container-text'>
           <li ><Link className='link-container-text' to="transport"> E-TRANSPORT</Link></li>
           <li><Link className='link-container-text' to="sport">HEALTH & FITNESS</Link></li>
-          <li><Link className='link-container-text' to="event">SOCIAL EVENTS</Link></li>
+          <li><Link className='link-container-text' to="event">COMMUNITY</Link></li>
         </ul>
     </div>
     <div className='page-container'>
