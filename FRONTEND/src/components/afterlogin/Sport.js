@@ -2,7 +2,7 @@
 const Sport = () => {
     return (
       <>
-        <h1>Welcome to the Health and Fitness </h1>
+        <h3 className='link-container-text'>Welcome to the Health and Fitness </h3>
       </>
     );
   }

@@ -7,7 +7,7 @@ const EventSocial = () => {
   },[])
     return (
       <>
-        <h1>Welcome to the Social Events</h1>
+        <h3 className='link-container-text'> Social Events</h3>
       </>
     );
   }

@@ -11,11 +11,13 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username && password) {
-      if(username=="admin" && password=="admin")
+      if(username!="admin" && password!="admin")
       {
         alert('Please check username and password');
       }
-      navigate('/Success');
+      else{ 
+        navigate('/Success');
+      }
     } else {
       alert('Please enter username and password');
     }
@@ -37,14 +39,15 @@ const Login = () => {
           <input type="password" id="password" autocomplete="new-password" value={password}
             onChange={(e) => setPassword(e.target.value)} autoComplete="disabled" name="password" />
           &nbsp;
-          <button type="submit">Login</button>
+          <button type="submit">Login</button> <a  href='' target='blank'><h4 className='pwd-link'>Forgot Password</h4></a>
+          
         </div>
+          <button type="submit">New User? Register</button> <br/>
+          
         
       </form>
       </div>
     </div>
   );
 }
-
-
 export default Login;

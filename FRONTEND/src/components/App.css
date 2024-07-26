@@ -2,34 +2,43 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #034b03
+    background-color: #034b03;
     
+   
 
+}
+.transport-container
+{
+  justify-content: space-around;
+  
 }
 
 .login-container {
-    width: 260px;
-    margin: 40px auto;
+    width: 200px;
+    margin: 38px auto;
     padding: 120px;
-    margin-bottom: auto;
+    
     background-color: #07a37a; /* Light blue background */
     background-image: url('../images/logobg.png') ; /* Update with your image path */
              
   }
   
-
   .login-form {
     display: inline;
     flex-direction: column;
     color: rgb(3, 66, 13);
     font-weight: 20px;
   }
-  
+  .transport-container{
+    margin-bottom: 4px;
+    font-weight: 2px;
+    color: #b4c0b7;  
+    padding-left: 450px;
+  }
   .form-control {
     margin-bottom: 10px;
     font-weight: 20px;
-    color: #034b03;
-    
+    color: #034b03;  
     padding-left: 450px;
   }
   
@@ -58,7 +67,17 @@
     font-size: 20px;
     
   }
-  
+  .link-container-text{
+    color: white;
+  }
+  .pwd-link
+  {
+    color: green;
+  }
+  .links-container
+  {
+    color: azure;
+  }
   button:hover {
     background-color: #45a049; /* Darker green on hover */
   }

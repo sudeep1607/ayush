@@ -1,40 +1,17 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import BookVehicleSlot from './BookVehicleSlot';
-import { Route, Routes, Link } from 'react-router-dom';
-const Transport  = () => {
-  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-  };
-  const bookslot = (e) =>
-  {
-    navigate('/BookVehicleSlot');
-  }
 
-  const options = [
-    {
-      id: 1,
-      name: 'E-CAR'
-    },
-    {
-      id: 2,
-      name: 'E-BIKE'
-    }
-    ,
-    {
-      id: 3,
-      name: 'E-CYCLE'
-    }
-  ];
-  
 
-  return (
+import React from 'react';
+
+function BookVehicleSlot()  {
+    return (
+      <>
+        <h3 className='link-container-text'>Book E- Vehicle Slot</h3>
+
+        
     <div className="transport-container">
       
-      <button type="submit" onClick={bookslot} className='link-container-text'>Book Charging Station </button>
+      <button type="submit" className='link-container-text'>Book Charging Station </button>
       <div className="formbox">
       <form>
       <div className="transport-control">
@@ -51,14 +28,9 @@ const Transport  = () => {
         </div> 
       </form>
       </div>
-      <Routes>
-        <Route path="transport" element={<BookVehicleSlot/>} />
-      </Routes>
       </div>
-
-      
-  
+      </>
     );
   }
-  export default Transport;
   
+  export default BookVehicleSlot;
